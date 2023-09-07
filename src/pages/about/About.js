@@ -1,10 +1,13 @@
 import './about.css'
+import Navbar from '../../components/Navbar';
+
 
 
 const About = () => {
     return (
         <div>
-           <h1>je suis un test</h1> 
+        <Navbar/>
+        <h1>je suis un test about</h1> 
         </div>
     );
 };
