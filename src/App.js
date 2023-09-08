@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './pages/home/Home';
 import Blog from "./pages/blog/Blog";
 import Error from "./pages/error404/Error";
@@ -10,6 +11,7 @@ const App = () => {
   return (
     // Configuration des routes
     <BrowserRouter>
+    <Navbar/>
     <Routes>
     <Route path="/" element ={<Home/>} />
     <Route path="/about" element ={<About/>} />
