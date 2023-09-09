@@ -31,7 +31,7 @@ const Navbar = () => {
                 <NavLink to ="/engagements" className={({isActive})=>isActive? 'active-nav':''}
                 // fermer le menu une fois la page cliquée 
                 onClick={()=> setIsNavShowing(prev => !prev)}>
-                    <li>Nos Engagements</li>
+                    <li>Notre Engagement</li>
                 </NavLink>
                 <NavLink to ="/blog" className={({isActive})=>isActive? 'active-nav':''}>
                     <li>Blog</li>
@@ -39,8 +39,8 @@ const Navbar = () => {
                 <NavLink to ="/contact" className={({isActive})=>isActive? 'active-nav':''}>
                     <li>Nous contacter</li>
                 </NavLink>
-                <NavLink to ="/about" className={({isActive})=>isActive? 'active-nav':''}>
-                    <li>A propos</li>
+                <NavLink to ="/inscription" className={({isActive})=>isActive? 'active-nav':''}>
+                    <li>Inscription</li>
                 </NavLink>
             </ul>
 

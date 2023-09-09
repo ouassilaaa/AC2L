@@ -1,5 +1,4 @@
 import'./blog.css';
-import Navbar from '../../components/Navbar';
 const Blog = () => {
     return (
         <div>
