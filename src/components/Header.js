@@ -13,7 +13,7 @@ const Header = () => {
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
                     </p>
-                    <Link to = "/inscription" className='btn lg'>Adhésion AC2L</Link>
+                    <Link to = "/activites" className='btn lg'> Découvre nos activités </Link>
                 </div>
                 <div className="main__header-right">
                     <div className="main__header-circle">                    </div>
