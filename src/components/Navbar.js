@@ -28,10 +28,10 @@ const Navbar = () => {
                 <NavLink to ="/activites" className={({isActive})=>isActive? 'active-nav':''}>
                     <li>Nos activités</li>
                 </NavLink>
-                <NavLink to ="/engagements" className={({isActive})=>isActive? 'active-nav':''}
+                <NavLink to ="/valeurs" className={({isActive})=>isActive? 'active-nav':''}
                 // fermer le menu une fois la page cliquée 
                 onClick={()=> setIsNavShowing(prev => !prev)}>
-                    <li>Notre Engagement</li>
+                    <li>Nos valeurs</li>
                 </NavLink>
                 <NavLink to ="/blog" className={({isActive})=>isActive? 'active-nav':''}>
                     <li>Blog</li>

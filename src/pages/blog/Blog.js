@@ -1,8 +1,9 @@
-import Valeurs from '../../components/Valeurs';
 import'./blog.css';
 const Blog = () => {
     return (
-        <Valeurs/>
+        <div>
+            <h1>PARTIE BLOG EN COURS</h1>
+        </div>
     );
 };
 

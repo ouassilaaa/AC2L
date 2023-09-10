@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SectionActivites = ({icon,title,className}) => {
+const SectionType = ({icon,title,className}) => {
     return (
         // créer un dynamisme pour nos differentes sections qu'on pourra réutiliser dans chaque component souhaité
         <div className={`section__head ${className}`}>
@@ -10,4 +10,4 @@ const SectionActivites = ({icon,title,className}) => {
     );
 };
 
-export default SectionActivites;
+export default SectionType;

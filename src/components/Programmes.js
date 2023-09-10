@@ -1,6 +1,6 @@
 import React from 'react';
 import {FcSportsMode} from 'react-icons/fc'
-import SectionActivites from './SectionActivites';
+import SectionType from './SectionType';
 import {programs} from'../data';
 import Card from '../UI/Card';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Programmes = () => {
     return (
         <section className="programs">
             <div className="container programs__container">
-                <SectionActivites icon={<FcSportsMode/>} title=" Nos Activités"/>
+                <SectionType icon={<FcSportsMode/>} title=" Nos Activités"/>
 
             <div className="programs__wrapper">
                 {

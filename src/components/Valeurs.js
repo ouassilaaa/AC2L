@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from "../images/valeurs.jpg";
+import Image from "../images/team.jpg";
 import {GiCutDiamond} from 'react-icons/gi'
-import SectionActivites from './SectionActivites';
+import SectionType from './SectionType';
 import {values} from '../data';
 import Card from '../UI/Card';
 
@@ -15,17 +15,16 @@ const Valeurs = () => {
                     </div>
                 </div>
                 <div className="values__right">
-                    <SectionActivites icon={GiCutDiamond} title="Valeurs"/>
+                    <SectionType icon={<GiCutDiamond/>} title="Valeurs"/>
                     <p>
-                    On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.
-
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
                     </p>
                     <div className="values__wrapper">
                     {
                     values.map(({ id,icon,title,desc})=>
                     {
                         return (
-                            <Card className="programs__program" key={id}>
+                            <Card className="values__value" key={id}>
                                 <span>{icon}</span>
                                 <h4>{title}</h4>
                                 <small>{desc}</small>

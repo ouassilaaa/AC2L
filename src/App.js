@@ -7,8 +7,7 @@ import Error from "./pages/error404/Error";
 import Contact from "./pages/contact/Contact";
 import Inscription from "./pages/inscription/Inscription";
 import Activites from "./pages/activites/Activites";
-import Engagement from "./pages/engagement/Engagement";
-
+import NosValeurs from './pages/NosValeurs/NosValeurs';
 
 const App = () => {
   return (
@@ -18,7 +17,7 @@ const App = () => {
     <Routes>
     <Route path="/" element ={<Home/>} />
     <Route path="/activites" element ={<Activites/>} />
-    <Route path="/engagement" element ={<Engagement/>} />
+    <Route path="/valeurs" element ={<NosValeurs/>} />
     <Route path="/blog" element ={<Blog/>} />
     <Route path="/contact" element ={<Contact/>} />
     <Route path="/inscription" element ={<Inscription/>} />

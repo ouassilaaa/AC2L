@@ -1,3 +1,5 @@
+/* MAIN */
+
 .main__header{
     width: 100vw;
     height: 100vh;
@@ -38,6 +40,7 @@
     position: relative;
 }
 
+/* cercle en arrière plan de la photo */
 .main__header-circle{
     width: 25rem;
     height: 25rem;
@@ -50,4 +53,44 @@
 
 .main__header-image{
 position: relative;   
+}
+
+/* FAQ */
+
+.faqs__container{
+    margin-left: 1rem;
+}
+
+.faqs__wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 3rem;
+    align-items: flex-start;
+}
+
+/* mise en place de bloc */
+.faq{
+    
+    background: var(--color-gray-500);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: gray;
+}
+
+.faq div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__icon{
+    background: transparent;
+    color: var(--color-gray-100);
+    font-size: 1rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
 }

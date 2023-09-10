@@ -1,0 +1,48 @@
+/* deux container un a côté de l'autre */
+.values__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 12%;
+}
+
+/* mettre image en saturation au deplacement souris */
+.values__image{
+    opacity: 0.7;
+    margin-top: 50%;
+    filter: saturate(0.25);
+    transition: var(--transition);
+}
+
+.values__image:hover{
+    filter: saturate(1);
+}
+
+.values__right{
+    margin-top: 3rem;
+}
+
+/* agencement du paragraphe et card */
+.values__right p {
+    margin: 1.5rem 0 5rem;
+    color: white;
+}
+
+.values__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.4rem 2.4rem;
+}
+
+/* placement icon en haut/gauche */
+.card.values__value{
+    padding-top: 3.5rem;
+    text-align: left;
+    position: relative;
+}
+
+.card.values__value span{
+    position: absolute;
+    top: -1.5rem;
+}
+
+
