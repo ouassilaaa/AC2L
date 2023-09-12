@@ -22,24 +22,36 @@ const Navbar = () => {
             <ul className={`nav__links ${isNavShowing ? 'show__nav': 'hide__nav'}`}>
 
 
-                <NavLink to ="/" className={({isActive})=>isActive? 'active-nav':''}>
-                    <li>Accueil</li>
-                </NavLink>
-                <NavLink to ="/activites" className={({isActive})=>isActive? 'active-nav':''}>
-                    <li>Nos activités</li>
-                </NavLink>
-                <NavLink to ="/valeurs" className={({isActive})=>isActive? 'active-nav':''}
+                <NavLink to ="/" className={({isActive})=>isActive? 'active-nav':''}
                 // fermer le menu une fois la page cliquée 
                 onClick={()=> setIsNavShowing(prev => !prev)}>
+
+                    <li>Accueil</li>
+                </NavLink>
+
+                <NavLink to ="/activites" className={({isActive})=>isActive? 'active-nav':''}
+                    onClick={()=> setIsNavShowing(prev => !prev)}>
+                    <li>Nos activités</li>
+                </NavLink>
+
+                <NavLink to ="/valeurs" className={({isActive})=>isActive? 'active-nav':''}
+                // fermer le menu une fois la page cliquée 
+                onClick={()=> setIsNavShowing(prev => !prev)} >
                     <li>Nos valeurs</li>
                 </NavLink>
-                <NavLink to ="/blog" className={({isActive})=>isActive? 'active-nav':''}>
+
+                <NavLink to ="/blog" className={({isActive})=>isActive? 'active-nav':''} 
+                onClick={()=> setIsNavShowing(prev => !prev)}>
                     <li>Blog</li>
                 </NavLink>
-                <NavLink to ="/contact" className={({isActive})=>isActive? 'active-nav':''}>
+
+                <NavLink to ="/contact" className={({isActive})=>isActive? 'active-nav':''} 
+                onClick={()=> setIsNavShowing(prev => !prev)}>
                     <li>Nous contacter</li>
                 </NavLink>
-                <NavLink to ="/inscription" className={({isActive})=>isActive? 'active-nav':''}>
+
+                <NavLink to ="/inscription" className={({isActive})=>isActive? 'active-nav':''}
+                onClick={()=> setIsNavShowing(prev => !prev)}>
                     <li>Inscription</li>
                 </NavLink>
             </ul>

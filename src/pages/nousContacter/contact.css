@@ -1,6 +1,29 @@
+
+
 .contact__container{
+    margin-top: 100px;
     display: grid;
     place-items: center;
+    grid-template-columns: 35% 50%;
+    gap: 10%;
+}   
+
+.contact__container p {
+    margin: 1rem 0 ;
+    color: white;
+
+}
+
+/* mettre image en saturation au deplacement souris */
+
+.contact__image{
+    margin-top: 10%;
+    filter: saturate(0.25);
+    transition: var(--transition);
+}
+
+.contact__image:hover{
+    filter: saturate(10);
 }
 
 .contact__wrapper{
@@ -25,9 +48,18 @@
 }
 
 /* MEDIA QUERIES (petits écrans) */
-@media screen and (max_width:600px) {
-    .contact__wrapper{
+@media screen and (max-width:600px) {
+
+    .contact__image{
+        display: none;
+    }
+
+
+
+
+    .contact__container{
         gap: 1.5rem;
+        grid-template-columns: 1fr;
     }
 
     .contact__container a {
@@ -35,5 +67,4 @@
         font-size: 1.2rem;
         border-radius: 1rem;
     }
-    
 }

@@ -40,8 +40,9 @@ const Footer = () => {
                     
                 </article>
             </div>
+                
             <div className="footer__copyright">
-                <small>2023 THE WHITE FOX COMPANY &copy; All Rights Reserved</small>
+                <small>2023 OUASSILA MESSAOUI &copy; All Rights Reserved</small>
             </div>
         </footer>
     );

@@ -20,3 +20,35 @@
     background: var(--color-secondary);
     color: var(--color-gray-600);
 }
+
+
+/* MEDIA QUERY PHONE ET TABLETTES*/ 
+/* Medium screens */
+
+@media screen and (max-width:1024px ) {
+    .programs__wrapper{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    
+
+}
+
+/* MEDIA QUERY PHONE ET TABLETTES*/ 
+/* Medium screens */
+
+@media screen and (max-width:600px ) {
+    .programs__wrapper{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .programs__program{
+        width: 84%;
+        margin: 0 auto;
+    }
+
+    
+
+}

@@ -61,6 +61,7 @@ nav{
 /* RESPONSIVITE : MEDIA QUERIES (petits et moyens écrans) */
 
 @media screen and (max-width: 1024px){
+   
     .nav__toggle-btn{
         display: inline-block;
         background: transparent;

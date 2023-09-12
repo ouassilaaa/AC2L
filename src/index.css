@@ -162,3 +162,37 @@ img{
   display: block;
   font-weight: 300;
 }
+
+/* MEDIA QUERY PHONE ET TABLETTES*/
+/* Medium screens */
+
+@media screen and(max-width:1024px ) {
+  .container{
+    width: var(--container--width-md);
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.6rem;
+  }
+
+  
+
+}  
+
+/* Small screens */
+
+  @media screen and (max-width:600px ) {
+    
+    
+    h1{
+      font-size: 2rem;
+      line-height: 1.3;
+
+    }
+  
+
+  
+}
