@@ -1,4 +1,4 @@
-import './navbar.css'; 
+import './style/navbar.css'; 
 import React, {useState } from 'react';
 import{Link, NavLink} from "react-router-dom";
 import {LiaBarsSolid} from "react-icons/lia";
@@ -54,6 +54,7 @@ const Navbar = () => {
                 onClick={()=> setIsNavShowing(prev => !prev)}>
                     <li>Inscription</li>
                 </NavLink>
+
             </ul>
 
             {/* permettre au menu de toggle */}

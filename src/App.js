@@ -9,6 +9,7 @@ import Activites from "./pages/activites/Activites";
 import NosValeurs from './pages/NosValeurs/NosValeurs';
 import NousContact from './pages/nousContacter/NousContact';
 import Formulaire from './pages/Formulaire/Formulaire';
+import Afterform from './pages/afterForm/Afterform';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
     <Route path="/blog" element ={<Blog/>} />
     <Route path="/contact" element ={<NousContact/>} />
     <Route path="/inscription" element ={<Formulaire/>} />
+    <Route path="/after" element ={<Afterform/>} />
+
 
     {/* path"*" fonctionne si l'url ne correspond pas  */}
     <Route path="*" element ={<Error/>} />
