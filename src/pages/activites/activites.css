@@ -1,12 +1,12 @@
 .programs{
-    margin-top: 4rem;
+    margin-top: 7rem;
 }
 
 .programs__wrapper{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .programs__program a {

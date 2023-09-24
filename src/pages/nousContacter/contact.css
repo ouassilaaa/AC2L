@@ -1,7 +1,7 @@
 
 
 .contact__container{
-    margin-top: 100px;
+    margin-top: 15rem;
     display: grid;
     place-items: center;
     grid-template-columns: 35% 50%;
@@ -53,9 +53,6 @@
     .contact__image{
         display: none;
     }
-
-
-
 
     .contact__container{
         gap: 1.5rem;
