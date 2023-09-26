@@ -3,7 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import Card from '../UI/Card';
-import {GrContact} from 'react-icons/gr'
+// import {GrContact} from 'react-icons/gr'
 
 
 
@@ -50,13 +50,13 @@ const handleSubmit = () => {
     return (
         <div className="main__container">
             <Card className="form__container">
-            <h3>Formulaire de contact  {<GrContact/>} </h3>               
+            <h3 data-testid="cypress-title">Formulaire de pré-adhésion</h3>               
             <p>Une activité vous intéresse et vous souhaitez avoir plus d'informations pour vous inscrire ? 
                      Rien de plus simple, remplissez à ce formulaire et nous vous contacterons dans les plus brefs délais. </p>
               <div className="form">
                 <form action="" method='POST'>                
-                    <input type="text" name="name" placeholder='Prénom' id="name" value={name} onChange={(e) => setName(e.target.value)} />
-                    <input type="text" placeholder='Nom' name="surname" id="surname" value={surname} onChange={(e) => setSurname(e.target.value)} />                
+                    <input type="text" name="name" placeholder='Nom' id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                    <input type="text" placeholder='Prénom' name="surname" id="surname" value={surname} onChange={(e) => setSurname(e.target.value)} />                
                     <input type="text" placeholder='Numéro de téléphone' name="mobile" id="mobile" value={mobile} onChange={(e) => setMobile(e.target.value)} />
                     <input type="email" placeholder='Email' name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />     
                     <textarea name="note" id="note"placeholder="Avez_vous des problèmes de santé connus? "value={note} onChange={(e) => setNote(e.target.value)} ></textarea>
