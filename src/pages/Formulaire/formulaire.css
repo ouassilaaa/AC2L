@@ -1,20 +1,16 @@
-
 .main__container{
     margin-top: -5rem;
     padding: 15rem;
     margin-left: 30rem;
     margin-right: -50rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-    
+    grid-template-columns: 1fr 1fr 1fr;        
 }
 
 .main__container p{
   color: white;
   margin-top: 1rem;
 }
-
 
 input{
   display:grid;
@@ -25,8 +21,6 @@ input{
   border-radius:10px;
   border: 1px solid --color-secondary;
   transition: .3s border-color;
-   
-
 }
 
 textarea {
@@ -40,9 +34,7 @@ textarea {
   box-shadow:4px 4px 10px rgba(0,0,0,0.06);
   height:150px;
   resize: none;
-
-  }
-
+}
   .btn{
     margin-top: 2rem;
   }
@@ -71,16 +63,10 @@ textarea {
     margin-left: 2rem;
     width: 80%;
   }
-
-
-  
-
 }
   
 /* MEDIA QUERIES (petits écrans) */
 @media screen and (max-width:600px) {
-
-
   .main__container{
     grid-template-columns: 1fr;
     margin-left: -2rem;
